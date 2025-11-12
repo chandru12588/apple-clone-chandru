@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @apply bg-black text-white font-sans overflow-x-hidden;
+}
+
+/* Optional: smooth font rendering */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom utility classes */
+.section {
+  @apply w-full flex flex-col items-center justify-center text-center py-16 px-6;
+}
+
+.section-dark {
+  @apply bg-black text-white;
+}
+
+.section-light {
+  @apply bg-white text-black;
+}
+
+.btn-primary {
+  @apply bg-gray-200 text-black font-medium px-6 py-2 rounded-lg hover:bg-gray-300 transition;
+}
+
+.btn-dark {
+  @apply bg-black text-white border border-white
