@@ -1,29 +1,36 @@
 import React from "react";
+import airpods from "../assets/airpods.jpg"
+import watch from "../assets/watch.jpeg"
+import ipad from "../assets/ipad.jpeg"
+import macbook from "../assets/macbook.jpg"
+import { image, img } from "framer-motion/client";
 
 const ProductGrid = () => {
   const products = [
     {
       title: "AirPods Pro 3",
       subtitle: "The world’s best in-ear Active Noise Cancellation.",
-      img: "/src/assets/airpods.jpg",
+      img:airpods,
       bg: "bg-[#f5f5f7]",
     },
     {
       title: "WATCH SERIES 11",
       subtitle: "The ultimate watch for a healthy life.",
-      img: "/src/assets/watch.jpeg",
+      img: watch,
+      
       bg: "bg-[#f5f5f7]",
     },
     {
       title: "iPad Pro",
       subtitle: "Advanced AI performance and game-changing capabilities.",
-      img: "/src/assets/ipad.jpg",
+      img: ipad,
+      
       bg: "bg-black text-white",
     },
     {
       title: "MacBook Pro 14”",
       subtitle: "Supercharged by M5.",
-      img: "/src/assets/macbook.jpg",
+      img: macbook,
       bg: "bg-black text-white",
     },
   ];
